@@ -1,0 +1,126 @@
+baseURL = "https://example.org/"
+languageCode = "en-us"
+title = "Pafou! OwO"
+paginate = 5
+theme = [ "PaperMod" ]
+enableRobotsTXT = true
+buildDrafts = false
+buildFuture = false
+buildExpired = false
+pygmentsUseClasses = true
+
+[minify]
+disableXML = true
+minifyOutput = true
+
+[params]
+env = "production"
+title = "Pafou! OwO"
+description = "PAFOU LTD is a company that provides services in the field of information technology. We are a team of professionals who are ready to help you with any task in the field of IT. We are engaged in the development of websites, mobile applications, and software. We also provide services for the development of design, branding, and marketing. We are always ready to help you with any task in the field of IT."
+keywords = [ "Blog", "Portfolio", "PaperMod" ]
+author = "Me"
+images = [ "<link or path of image for opengraph, twitter-cards>" ]
+DateFormat = "January 2, 2006"
+defaultTheme = "auto"
+disableThemeToggle = false
+ShowReadingTime = true
+ShowShareButtons = true
+ShowPostNavLinks = true
+ShowBreadCrumbs = true
+ShowCodeCopyButtons = false
+ShowWordCount = true
+ShowRssButtonInSectionTermList = true
+UseHugoToc = true
+disableSpecial1stPost = false
+disableScrollToTop = false
+comments = false
+hidemeta = false
+hideSummary = false
+showtoc = false
+tocopen = false
+
+  [params.assets]
+  favicon = "<link / abs url>"
+  favicon16x16 = "<link / abs url>"
+  favicon32x32 = "<link / abs url>"
+  apple_touch_icon = "<link / abs url>"
+  safari_pinned_tab = "<link / abs url>"
+
+  [params.label]
+  text = "Home"
+  icon = "/apple-touch-icon.png"
+  iconHeight = 35
+
+  [params.profileMode]
+  enabled = false
+  title = "ExampleSite"
+  subtitle = "This is subtitle"
+  imageUrl = "<img location>"
+  imageWidth = 120
+  imageHeight = 120
+  imageTitle = "my image"
+
+    [[params.profileMode.buttons]]
+    name = "Posts"
+    url = "posts"
+
+    [[params.profileMode.buttons]]
+    name = "Tags"
+    url = "tags"
+
+  [params.homeInfoParams]
+  Title = "Hi there 👋"
+  Content = "Welcome to PAFOU LTD. We are a company that provides services in the field of information technology. We are a team of professionals who are ready to help you with any task in the field of IT. We are engaged in the development of websites, mobile applications, and software. We also provide services for the development of design, branding, and marketing. We are always ready to help you with any task in the field of IT."
+
+  [[params.socialIcons]]
+  name = "github"
+  url = "https://github.com/pafoultd"
+
+  [params.analytics]
+
+  [params.cover]
+  hidden = true
+  hiddenInList = true
+  hiddenInSingle = true
+
+  [params.editPost]
+  URL = "https://github.com/<path_to_repo>/content"
+  Text = "Suggest Changes"
+  appendFilePath = true
+
+  [params.fuseOpts]
+  isCaseSensitive = false
+  shouldSort = true
+  location = 0
+  distance = 1_000
+  threshold = 0.4
+  minMatchCharLength = 0
+  limit = 10
+  keys = [ "title", "permalink", "summary", "content" ]
+
+[[menu.main]]
+identifier = "categories"
+name = "categories"
+url = "/categories/"
+weight = 10
+
+[[menu.main]]
+identifier = "tags"
+name = "tags"
+url = "/tags/"
+weight = 20
+
+[[menu.main]]
+identifier = "One Hub"
+name = "One Hub"
+url = "https://one-api.ous50.moe"
+weight = 30
+
+[[menu.main]]
+identifier = "Store"
+name = "Store"
+url = "/store.html"
+weight = 40
+
+[markup.highlight]
+noClasses = false
