@@ -122,5 +122,11 @@ name = "Store"
 url = "/store.html"
 weight = 40
 
+[[menu.main]]
+identifier = "FPS2.ME"
+name = "FPS2.ME"
+url = "/fps2-me.html"
+weight = 40
+
 [markup.highlight]
 noClasses = false
